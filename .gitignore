@@ -1,0 +1,16 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+src/exports/
+.env
+.env.*
+!.env.example
+arduino_secrets.h
+*.pcap
+*.pcapng
+*.log
+*.key
+*.pem
+.DS_Store
+
