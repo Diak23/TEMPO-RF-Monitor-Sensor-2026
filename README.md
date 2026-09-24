@@ -8,10 +8,21 @@ Projet de Master 2 EEA réalisé à l’Institut d’Électronique et des Systè
 **Encadrement :** Jean Podlecki  
 **Stage :** avril–août 2026
 
+## Présentation du projet
+
+[Consulter la présentation PDF](docs/PRESENTATION_PFE_TEMPO_CEO.pdf)
+
 ## Découvrir le projet
 
 - [Démonstration sans installation](docs/DEMONSTRATION.md)
+- [Guide d’utilisation](docs/GUIDE_UTILISATION.md)
+- [Matériel et chaîne RF](docs/MATERIEL.md)
+- [Antennes et caractérisation](docs/ANTENNES.md)
+- [Calibration et bilan de puissance](docs/CALIBRATION.md)
 - [Architecture et limites](docs/ARCHITECTURE.md)
+- [Dictionnaire des données](docs/DONNEES.md)
+- [Résultats de l’exemple simulé](docs/RESULTATS_SIMULATION.md)
+- [État du projet et feuille de route](docs/FEUILLE_DE_ROUTE.md)
 - [Récupérer et contribuer au projet](docs/PUBLICATION.md)
 
 ![Puissance RF simulée sur les deux bandes](docs/images/simulation.png)
@@ -35,6 +46,17 @@ La voie analogique associe antenne, filtrage, amplification, détection RF et co
 
 Interface graphique, acquisition limitée par durée ou nombre de mesures, graphiques et exports CSV/PNG. Le champ `simulated` permet de distinguer les données synthétiques des observations physiques.
 
+## Démonstration en ligne de commande
+
+Sans dépendance externe ni interface graphique, depuis la racine du dépôt :
+
+```bash
+python scripts/analyse_simulation.py
+python scripts/analyse_simulation.py --output src/exports/resume_simulation.json
+```
+
+Le script résume le CSV fourni, distingue les deux voies et refuse les données non simulées. La puissance moyenne est calculée en watts avant conversion en dBm. Il ne lance pas une nouvelle acquisition.
+
 ## Essai sans matériel
 
 Sur Linux avec une session graphique, Python 3.10+ et Tkinter disponibles :
@@ -57,6 +79,7 @@ Sur Debian/Ubuntu, les paquets `python3-venv` et `python3-tk` doivent être inst
 | `src/main.py` | Application graphique et traitement |
 | `src/drivers/` | Interfaces MCP3208, Wi-Fi et BLE |
 | `examples/simulation/` | Exemple synthétique vérifié |
+| `scripts/` | Analyse reproductible sans matériel |
 | `docs/` | Démonstration, architecture et publication |
 
 ## Compétences mobilisées

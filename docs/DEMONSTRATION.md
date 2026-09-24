@@ -8,6 +8,10 @@
 
 Le fichier [mesures.csv](../examples/simulation/mesures.csv) contient 826 enregistrements issus d’une session synthétique de deux bandes. Toutes les lignes portent `simulated=True`. Le graphique est reconstruit à partir de ce CSV ; il ne s’agit pas d’une capture de l’interface.
 
+## Reproduire le résumé sans interface graphique
+
+Depuis la racine, lancer `python scripts/analyse_simulation.py`. Le script utilise uniquement la bibliothèque standard de Python. Il lit l’exemple livré et refuse les lignes non simulées, les valeurs non finies et une énergie incompatible avec puissance × durée. Voir le [résumé calculé](RESULTATS_SIMULATION.md).
+
 ## Essai de 30 secondes
 
 1. Installer les dépendances et lancer `python src/main.py` depuis la racine du projet.
