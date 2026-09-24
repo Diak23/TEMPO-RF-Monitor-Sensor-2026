@@ -1,0 +1,3 @@
+-r requirements.txt
+spidev>=3.6
+
