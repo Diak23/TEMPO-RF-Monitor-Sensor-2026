@@ -12,9 +12,18 @@ Projet de Master 2 EEA réalisé à l’Institut d’Électronique et des Systè
 
 [Consulter la présentation PDF](docs/PRESENTATION_PFE_TEMPO_CEO.pdf)
 
+## Images de la plateforme
+
+![Tableau de bord de la version de soutenance](docs/images/interface_soutenance.png)
+
+*Capture historique issue de la présentation, page 14. Cette version inclut un onglet LoRa ; l’édition graphique publiée ne l’intègre pas encore. [Provenance et lecture des valeurs](docs/GALERIE.md).*
+
 ## Découvrir le projet
 
 - [Démonstration sans installation](docs/DEMONSTRATION.md)
+- [Galerie : interface et énergie cumulée](docs/GALERIE.md)
+- [Composants : fiches constructeur et illustrations](docs/composants/README.md)
+- [LoRa : capture, simulation et interface série](docs/LORA.md)
 - [Guide d’utilisation](docs/GUIDE_UTILISATION.md)
 - [Matériel et chaîne RF](docs/MATERIEL.md)
 - [Antennes et caractérisation](docs/ANTENNES.md)
@@ -28,6 +37,12 @@ Projet de Master 2 EEA réalisé à l’Institut d’Électronique et des Systè
 ![Puissance RF simulée sur les deux bandes](docs/images/simulation.png)
 
 *Exemple entièrement simulé : ces courbes ne constituent pas une mesure expérimentale.*
+
+## Énergie cumulée simulée
+
+![Énergie cumulée par bande](docs/images/energie_cumulee_simulation.png)
+
+*CSV simulé fourni : 5,380 nJ à 868 MHz et 14,913 nJ à 2,45 GHz. Ces estimations ne représentent pas une énergie absorbée. [Méthode et limites](docs/GALERIE.md).*
 
 ## Objectif
 
@@ -76,6 +91,7 @@ Sur Debian/Ubuntu, les paquets `python3-venv` et `python3-tk` doivent être inst
 
 | Chemin | Contenu |
 |---|---|
+| `extensions/lora/` | Simulation et lecture série LoRa indépendantes de l’IHM |
 | `src/main.py` | Application graphique et traitement |
 | `src/drivers/` | Interfaces MCP3208, Wi-Fi et BLE |
 | `examples/simulation/` | Exemple synthétique vérifié |
@@ -91,4 +107,5 @@ Instrumentation RF, bilan de gain, calibration, acquisition SPI, développement 
 Prototype académique. Les résultats RF et RSSI dépendent de la calibration, du récepteur et des hypothèses temporelles. L’énergie estimée n’est pas une énergie absorbée par une personne. Les seuils colorés sont des repères logiciels ; ils ne constituent pas des seuils sanitaires.
 
 Le code est issu de la version multimode du travail initial. Cette édition reprend une sélection de fichiers avec un nom de projet unifié. La démonstration simulée ne valide pas la précision du matériel. Voir les [limites détaillées](docs/ARCHITECTURE.md).
+
 

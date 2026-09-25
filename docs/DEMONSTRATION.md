@@ -31,3 +31,8 @@ Désactiver la simulation pour une session exclusivement expérimentale. Install
 
 Une session graphique est nécessaire ; un terminal distant sans affichage ne suffit pas. Les instructions ont été confrontées au code, mais l’interface et le matériel restent à vérifier sur la machine cible.
 
+
+## Voir la plateforme et essayer LoRa
+
+La [galerie](GALERIE.md) présente le tableau de bord historique et l’énergie cumulée. La [partie LoRa](LORA.md) fournit une capture et un exemple autonome : `python extensions/lora/demo.py --count 5`.
+

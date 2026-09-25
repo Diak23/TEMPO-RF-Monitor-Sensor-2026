@@ -29,6 +29,12 @@ Les moyennes utilisent des poids égaux par point. Les nombres affichés sont ar
 
 ![Évolution des deux voies simulées](images/simulation.png)
 
+## Énergie cumulée par bande
+
+![Énergie cumulée simulée](images/energie_cumulee_simulation.png)
+
+La figure cumule les contributions `energy_j` du CSV par bande. [Galerie et provenance des autres images](GALERIE.md).
+
 ## Ce que cet exemple montre
 
 La chaîne logicielle sait représenter deux voies, conserver les données et calculer des indicateurs par voie. Le signal simulé combine une évolution périodique et une composante aléatoire.
@@ -45,3 +51,4 @@ L’énergie publiée est donc la somme des contributions enregistrées ; elle n
 - Refus testé sur quatre entrées invalides : donnée réelle, NaN, énergie incohérente et temps négatif.
 
 Ces contrôles portent sur l’exemple et l’utilitaire d’analyse. Ils ne valident pas le fonctionnement matériel, l’interface graphique ni la justesse métrologique de l’application.
+

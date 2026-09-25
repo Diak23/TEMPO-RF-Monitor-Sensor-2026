@@ -13,8 +13,10 @@
 | Mesures VNA et comparaison simulation/mesure | À ajouter |
 | Calibration expérimentale avec incertitudes | À ajouter |
 | Mesures physiques anonymisées et fiche d’essai | À ajouter |
-| Démonstration vidéo ou capture de l’interface | À ajouter |
-| Extension LoRa dans cette édition | Non intégrée |
+| Captures de l’interface de soutenance | Présentes, avec provenance et limites |
+| Vidéo de l’édition actuelle | À ajouter |
+| Extension LoRa autonome | Simulation et pilote série présents ; radio réelle non validée |
+| Onglet LoRa dans l’IHM publiée | À intégrer |
 
 ## Priorités techniques proposées
 
@@ -25,3 +27,4 @@
 5. Définir précisément les indicateurs durée, intervalle et rapport cyclique avant leur ajout.
 
 Ces éléments constituent une feuille de route, pas une liste de performances déjà démontrées.
+

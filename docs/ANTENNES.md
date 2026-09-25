@@ -4,7 +4,11 @@
 
 ## Objectif
 
-Documenter les antennes des bandes ciblées, 868 MHz et 2,45 GHz, et relier leur adaptation au fonctionnement de la chaîne de réception. Les fichiers HFSS et les mesures VNA ne figurent pas encore dans cette édition du dépôt.
+Documenter les antennes des bandes ciblées, 868 MHz et 2,45 GHz, et relier leur adaptation au fonctionnement de la chaîne de réception. La présentation contient des résultats HFSS et VNA. Une illustration HFSS est reproduite ci-dessous ; les fichiers HFSS natifs et les exports VNA bruts restent à joindre.
+
+![Antennes étudiées sous HFSS](images/antennes_hfss.png)
+
+Source : page 4 de la [présentation](PRESENTATION_PFE_TEMPO_CEO.pdf#page=4).
 
 ## Démarche à présenter
 
@@ -18,8 +22,8 @@ Documenter les antennes des bandes ciblées, 868 MHz et 2,45 GHz, et relier leur
 
 | Résultat | Présentation attendue | État du dépôt |
 |---|---|---|
-| Géométrie | Dessin coté, unités et matériau | À joindre |
-| Adaptation | S11 en dB, fréquence du minimum, valeur à la fréquence cible | À joindre |
+| Géométrie | Illustration et dimensions dans la présentation | Synthèse illustrée présente ; modèle natif à joindre |
+| Adaptation | S11 simulé dans la présentation | Synthèse illustrée présente ; données brutes à joindre |
 | Bande passante | Critère choisi et bornes fréquentielles | À joindre |
 | Impédance | Partie réelle et imaginaire au plan de référence | À joindre |
 | Rayonnement | Diagramme 3D et coupes avec axes et normalisation | À joindre |
@@ -31,3 +35,4 @@ Le minimum de S11 ne résume pas le gain ni l’efficacité. Éviter d’attribu
 ## Organisation proposée des futurs fichiers
 
 Créer un dossier par bande, séparer modèles, mesures et figures, et accompagner chaque série d’un README précisant instruments, calibration, unités et date. Conserver les données sources avec les figures sélectionnées. Publier uniquement des résultats vérifiés ; aucun chiffre d’antenne n’est présenté ici comme déjà validé.
+

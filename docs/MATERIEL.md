@@ -29,7 +29,7 @@ Ce schéma décrit les fonctions. Il ne constitue ni un schéma de câblage ni u
 | Raspberry Pi | Piloter l’acquisition et l’affichage | OS, Python, droits SPI et interfaces |
 | Sniffer BLE | Fournir des observations protocolaires | Version du sniffer, champs tshark disponibles |
 
-Les références commerciales, photographies et schémas définitifs du montage restent à joindre avec leur provenance. Les caractéristiques nominales d’un composant ne remplacent pas sa caractérisation dans la chaîne assemblée.
+Les références commerciales et les illustrations de la présentation sont regroupées dans les [documents composants](composants/README.md). Le schéma électrique définitif et les photographies du montage final restent à joindre. Les caractéristiques nominales d’un composant ne remplacent pas sa caractérisation dans la chaîne assemblée.
 
 ## Configuration présente dans le logiciel
 
@@ -54,3 +54,4 @@ Ces valeurs proviennent de `src/main.py`. Elles ne garantissent pas la compatibi
 6. Archiver les réglages avec les exports et la [fiche d’essai](templates/FICHE_ESSAI.md).
 
 Un niveau RF mesuré par la chaîne analogique ne suffit pas à identifier un protocole. Une identification BLE issue du pilote reste indicative.
+
